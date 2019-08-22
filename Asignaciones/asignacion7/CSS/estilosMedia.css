@@ -1,0 +1,54 @@
+@media screen and (max-width:1000px) and (min-width:580px){       /* cuando achicamos la pantalla hasta un minimo de 700 px se realizara todos esos eventos */
+    header{
+        background: #000000;
+        width: 100%;
+        height: 120px;
+    }
+    header label{
+        display: block;     /* desplegara el menu */
+        float: right;
+    }
+    .menu{
+        position: absolute;
+        background: #8A4B08;
+        width: 50%;
+        margin-left: -50%;      /* ocultara el menu colocando el margen de muestra en valor negativo */
+        transition: all 0.5s;   /* el tiempo de aparicion del menu tendra un retardo de medio segundo */
+    }
+    .menu ul{
+        flex-direction: column;     /* mostrara el menu en forma de columna */
+    }
+    .menu li{
+        border-top: 1px solid #fff;     /* colocamos un borde de 1px separando cada lista del menu */
+    }
+    #btnMenu:checked ~.menu{    /* cuando presionemos en el check boxs que esta oculto */
+        margin-left: 0;     /* permitira mostrar el menu a partir del margen cero */
+    }
+    .menu li a{
+        padding: 10px 20px;
+    }
+    /*.logo{
+        height: 50px
+    }*/
+    header h1{
+        font-size: 20px;
+    }    
+    .main{
+        padding-top: 130px;
+
+    }
+    #hora{
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+    
+    }
+    #fecha{
+        color: rgb(19, 10, 10);
+        font-size: 14px;
+        font-weight: bold;
+        background: red;
+    
+    }
+    
+}
