@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    background: #8A4B08;
+    position: fixed;    /* fija el menu o todo el encabezado en este caso para que sea inamovible*/
+    z-index: 1000;
+}
+header h1{
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: center;
+}
+
+#btnMenu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    border-right: 1px solid #ffffff;
+    float: left;
+}
+header label:hover{    /* cuando pasamos el cursor por encima dellabel*/
+    cursor: pointer;        /* cambiara el puntero del raton a una mano */
+    background: rgba(0,0,0,0,3);
+}
+.menu ul{
+    margin: 0;
+    list-style: none;   /* se quita los estilos del menu ul, en este caso los puntos */
+    padding: 0;
+    display: flex;      /* permite alinear al menu de forma horizontal */
+}
+.menu li:hover{         /* al pasar el cursor del raton sobre el menu cambiara de color el fondo */
+    background: rgba(0,0,0,0.3);    
+}
+.menu li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li a.current{
+    background: #ffffff;
+}
+
+
+.main{
+    padding: 20px;
+}
+.main .articulos{   /* bloque principal de la pagina donde iran los articulos */
+    width: 70%;   /* colocamos un ancho del 58.5% */
+    float: left;        /* alineamos el articulo hacia la izquerda */
+    /*margin: 20px auto;        colocamos margen inferior y superior de 20 px */
+}
+aside{      /* menu lateral */
+    width: 30%;     /* ocupamos el 30% de la pantalla para el menu lateral */
+    float: left;        /* alineamos hacia la izquierda */
+    /*padding-top: 100px;*/
+}
+
+.recorrer{
+    width: 80%
+}
+footer{
+    background: #8A4B08;
+    clear: both;        /* nos permite alinear al pie de pagina hasta el final de la pagina*/
+}
+footer ul a{padding: 7px; color: #fff; font-size: 15;
+}
+footer span{color: #fff; text-align: center; padding: 10px;}
+
+.footerUno{
+    text-align: center;
+}
+.footerDos{
+    text-align: center;
+}
+
+/* Estilos para la fecha y hora*/
+.tiempo{
+    background: red;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: fixed;
+}
+#hora{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+#fecha{
+    color: rgb(19, 10, 10);
+    font-size: 18px;
+    font-weight: bold;
+    background: red;
+
+}
+#ciudad1, #ciudad2, #ciudad3{
+    display: none;
+}

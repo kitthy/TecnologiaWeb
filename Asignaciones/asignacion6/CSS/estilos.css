@@ -7,12 +7,16 @@ header{
     position: fixed;    /* fija el menu o todo el encabezado en este caso para que sea inamovible*/
     z-index: 1000;
 }
-header h1{
+#logo{
+    display: flex;
+    justify-content: center;
+}
+/*header h1{
     text-align: center;
     color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     float: center;
-}
+}*/
 
 #btnMenu{
     display: none;
