@@ -1,0 +1,73 @@
+<! DOCTYPE html>
+< html >
+  < cabeza >
+    < meta  charset = " utf-8 " >
+
+    < título > Nuestros superhéroes </ título >
+
+    < link  href = " https://fonts.googleapis.com/css?family=Faster+One "  rel = " stylesheet " >
+    < link  rel = " stylesheet "  href = " style.css " >
+  </ cabeza >
+
+  < cuerpo >
+
+      < encabezado >
+
+      </ header >
+
+      < sección >
+
+      </ sección >
+
+    < guión >
+    encabezado var =  documento . querySelector ( ' encabezado ' );
+    var sección =  documento . querySelector ( ' sección ' );
+    var requestURL =  ' https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json ' ;
+    solicitud var =  new  XMLHttpRequest ();
+    solicitud . abierto ( ' GET ' , requestURL);
+    solicitud . responseType  =  ' texto ' ;
+    solicitud . enviar ();
+    solicitud . onload  =  function () {
+      var superHeroesText =  solicitud . la respuesta ;
+      var superHeroes =  JSON . analizar (superHeroesText);
+      populateHeader (superhéroes);
+      showHeroes (superhéroes);
+    }
+    función  populateHeader ( jsonObj ) {
+      var myH1 =  documento . createElement ( ' h1 ' );
+      myH1 . textContent  = jsonObj [ ' squadName ' ];
+      cabecera . appendChild (myH1);
+      var myPara =  documento . createElement ( ' p ' );
+      myPara . textContent  =  ' Ciudad natal: '  + jsonObj [ ' homeTown ' ] +  ' // Formado: '  + jsonObj [ ' formado ' ];
+      cabecera . appendChild (myPara);
+    }
+    función  showHeroes ( jsonObj ) {
+      var heroes = jsonObj [ ' miembros ' ];
+      for ( var i =  0 ; i <  heroes . length ; i ++ ) {
+        var myArticle =  documento . createElement ( ' artículo ' );
+        var myH2 =  documento . createElement ( ' h2 ' );
+        var myPara1 =  documento . createElement ( ' p ' );
+        var myPara2 =  documento . createElement ( ' p ' );
+        var myPara3 =  documento . createElement ( ' p ' );
+        var myList =  documento . createElement ( ' ul ' );
+        myH2 . textContent  = héroes [i]. nombre ;
+        myPara1 . textContent  =  ' Identidad secreta: '  + héroes [i]. identidad secreta ;
+        myPara2 . textContent  =  ' Edad: '  + héroes [i]. edad ;
+        myPara3 . textContent  =  ' Superpoderes: ' ;
+        var superpoderes = héroes [i]. poderes ;
+        for ( var j =  0 ; j <  superPowers . length ; j ++ ) {
+          var listItem =  documento . createElement ( ' li ' );
+          listItem . textContent  = superPowers [j];
+          myList . appendChild (listItem);
+        }
+        myArticle . appendChild (myH2);
+        myArticle . appendChild (myPara1);
+        myArticle . appendChild (myPara2);
+        myArticle . appendChild (myPara3);
+        myArticle . appendChild (myList);
+        sección . appendChild (myArticle);
+      }
+    }
+    </ script >
+  </ cuerpo >
+</ html >
