@@ -27,6 +27,10 @@ function ciudad1()
     document.getElementById("ciudad2").style.display = "none";
     document.getElementById("ciudad3").style.display = "none";
     document.getElementById("ciudad4").style.display = "none";
+    document.getElementById("ciudad5").style.display = "none";
+    document.getElementById("ciudad6").style.display = "none";
+    document.getElementById("ciudad7").style.display = "none";
+
 }
 function ciudad2()
 {
@@ -35,6 +39,10 @@ function ciudad2()
     document.getElementById("ciudad2").style.display = "block";
     document.getElementById("ciudad3").style.display = "none";
     document.getElementById("ciudad4").style.display = "none";
+    document.getElementById("ciudad5").style.display = "none";
+    document.getElementById("ciudad6").style.display = "none";
+    document.getElementById("ciudad7").style.display = "none";
+
 }
 
 function ciudad3()
@@ -44,6 +52,9 @@ function ciudad3()
     document.getElementById("ciudad2").style.display = "none";
     document.getElementById("ciudad3").style.display = "block";
     document.getElementById("ciudad4").style.display = "none";
+    document.getElementById("ciudad5").style.display = "none";
+    document.getElementById("ciudad6").style.display = "none";
+    document.getElementById("ciudad7").style.display = "none";
 
 }
  
@@ -54,4 +65,44 @@ function ciudad4()
     document.getElementById("ciudad2").style.display = "none";
     document.getElementById("ciudad3").style.display = "none";
     document.getElementById("ciudad4").style.display = "block";
+    document.getElementById("ciudad5").style.display = "none";
+    document.getElementById("ciudad6").style.display = "none";
+    document.getElementById("ciudad7").style.display = "none";
+}
+
+ 
+function ciudad5()
+{
+    document.getElementById("marruecos").style.display = "none";
+    document.getElementById("ciudad1").style.display = "none";
+    document.getElementById("ciudad2").style.display = "none";
+    document.getElementById("ciudad3").style.display = "none";
+    document.getElementById("ciudad4").style.display = "none";
+    document.getElementById("ciudad5").style.display = "block";
+    document.getElementById("ciudad6").style.display = "none";
+    document.getElementById("ciudad7").style.display = "none";
+}
+
+function ciudad6()
+{
+    document.getElementById("marruecos").style.display = "none";
+    document.getElementById("ciudad1").style.display = "none";
+    document.getElementById("ciudad2").style.display = "none";
+    document.getElementById("ciudad3").style.display = "none";
+    document.getElementById("ciudad4").style.display = "none";
+    document.getElementById("ciudad5").style.display = "none";
+    document.getElementById("ciudad6").style.display = "block";
+    document.getElementById("ciudad7").style.display = "none";
+}
+
+function ciudad7()
+{
+    document.getElementById("marruecos").style.display = "none";
+    document.getElementById("ciudad1").style.display = "none";
+    document.getElementById("ciudad2").style.display = "none";
+    document.getElementById("ciudad3").style.display = "none";
+    document.getElementById("ciudad4").style.display = "none";
+    document.getElementById("ciudad5").style.display = "none";
+    document.getElementById("ciudad6").style.display = "none";
+    document.getElementById("ciudad7").style.display = "block";
 }
