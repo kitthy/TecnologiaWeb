@@ -1,0 +1,120 @@
+header{
+    width: 100%;
+    background: #8A4B08;
+    position: fixed;    /* fija el menu o todo el encabezado en este caso para que sea inamovible*/
+    z-index: 1000;
+
+}
+
+main{
+    padding-top: 160px;
+}
+@media screen and (min-width:1000px){       /* cuando achicamos la pantalla hasta un minimo de 700 px se realizara todos esos eventos */
+
+    .menu li a{
+        padding: 15px 20px;
+    }
+
+    .container{
+        margin: 25px;
+        min-width: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .container img{
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width:1000px) and (min-width:580px){     /* PANTALLA MEDIANA */
+    header{
+        height: 120px;
+    }
+    main{
+        padding-top: 120px;
+    }
+/* datos del menu*/
+    header label{
+        display: block;     /* desplegara el menu */
+        float: right;
+    }
+    .menu{
+        position: absolute;
+        background: #8A4B08;
+        width: 50%;
+        margin-left: -50%;      /* ocultara el menu colocando el margen de muestra en valor negativo */
+        transition: all 0.5s;   /* el tiempo de aparicion del menu tendra un retardo de medio segundo */
+    }
+    .menu ul{
+        flex-direction: column;     /* mostrara el menu en forma de columna */
+    }
+    .menu li{
+        border-top: 1px solid #fff;     /* colocamos un borde de 1px separando cada lista del menu */
+    }
+    #btnMenu:checked ~.menu{    /* cuando presionemos en el check boxs que esta oculto */
+        margin-left: 0;     /* permitira mostrar el menu a partir del margen cero */
+    }
+    .menu li a{
+        padding: 10px 20px;
+    }
+/* datos de la galeria */
+    .container{
+        margin: 25px;
+        min-width: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .container img{
+        width: 100%;
+    }
+} 
+
+@media screen and (max-width:580px) {   /* pantalla pequeña */
+    header{
+        height: 80;
+    }
+    main{
+        padding-top: 80px;
+    }
+
+    header label{
+        display: block;     /* desplegara el menu */
+        float: right;
+    }
+    .menu{
+        position: absolute;
+        background: #8A4B08;
+        width: 50%;
+        margin-left: -50%;      /* ocultara el menu colocando el margen de muestra en valor negativo */
+        transition: all 0.5s;   /* el tiempo de aparicion del menu tendra un retardo de medio segundo */
+    }
+    .menu ul{
+        flex-direction: column;     /* mostrara el menu en forma de columna */
+    }
+    .menu li{
+        border-top: 1px solid #fff;     /* colocamos un borde de 1px separando cada lista del menu */
+    }
+    #btnMenu:checked ~.menu{    /* cuando presionemos en el check boxs que esta oculto */
+        margin-left: 0;     /* permitira mostrar el menu a partir del margen cero */
+    }
+
+    .container{
+        margin: 25px;
+        min-width: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .container img{
+        width: 100%;
+    }
+}
+.container :hover{
+    box-shadow: 0px 0px 20px 0px black;     /* mostrara una sombra en las figuras del carrusel de color negro */
+    
+}

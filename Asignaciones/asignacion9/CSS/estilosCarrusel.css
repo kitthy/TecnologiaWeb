@@ -1,0 +1,54 @@
+.contenido{     /* un div con el nombre de clase contenido, dentro del aside*/
+    width: 70%;
+    /*height: 10%;*/
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 55px;
+}
+.carrusel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 20s infinite linear;   /* permite rotar a las imagenes en un tiempo de 15 s de forma infinita */
+    transform-style: preserve-3d;   /* permite transformar las imagenes en 3D */
+}
+.carrusel:hover{    /* al pasar el raton por encima del carrusel */
+    animation-play-state: paused;       /* pausa la animacion al pasa r el cursor por encima del carrusel */
+    cursor: pointer;        /* cambia el cursor a una mano al pasar por encima del carrusel */
+}
+
+.carrusel figure{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;     /* mostrara una sombra en las figuras del carrusel de color negro */
+}
+
+/* para cada figura del carrusel permite rotar el grado que esta indicado en su eje Y, ademas que se traslada 300 pixeles en su eje Z */
+.carrusel figure:nth-child(1){transform:rotatey(0deg) translateZ(300px);}
+.carrusel figure:nth-child(2){transform:rotatey(40deg) translateZ(300px);}
+.carrusel figure:nth-child(3){transform:rotatey(80deg) translateZ(300px);}
+.carrusel figure:nth-child(4){transform:rotatey(1200deg) translateZ(300px);}
+.carrusel figure:nth-child(5){transform:rotatey(160deg) translateZ(300px);}
+.carrusel figure:nth-child(6){transform:rotatey(200deg) translateZ(300px);}
+.carrusel figure:nth-child(7){transform:rotatey(240deg) translateZ(300px);}
+.carrusel figure:nth-child(8){transform:rotatey(280deg) translateZ(300px);}
+.carrusel figure:nth-child(9){transform:rotatey(320deg) translateZ(300px);}
+.carrusel figure:nth-child(10){transform:rotatey(360deg) translateZ(300px);}
+
+.carrusel img{
+    width: 100%;
+    transition: all 500ms;     /* se controla el decrecimiento de la imagen en un tiempo de 500 mili seg*/ 
+
+}
+.carrusel img:hover{    /* al pasar el raton por una imagen */
+    transform: scale(1.9);  /*permite crecer la imagen en una escala de 1 a 9 que es el maximo */
+    transition: all 1s;     /* se controla el crecimiento de la imagen en un tiempo de 1s, puede ser menos en ms */ 
+}
+@keyframes rotar{       /* controlar la animacion de la linea 11 */
+    from{
+        transform: rotatey(0deg);   /* rotara transformando desde 0 grados */
+    } to{
+        transform: rotateY(360deg);     /* hasta 360 grados en el eje Y */
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilosCarrusel.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilosAside.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilosMedia.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilosGrande.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilosPequeño.css"/>
+    <title>SaharaToursGo</title>
+    <script src="js/horaFecha.js"></script>
+</head>
+<body>
+    <header class="encabezado">
+            <div id="logo"><a href="principal.html"><img src="Imagenes/logo2.png" alt="Logo"/></a></div>
+    </header>
+    <main class="main">
+            <form action="gracias.html" method="GET">
+                <section class="articulos">
+                    <h2>Contacto con SaharaToursGo.com</h2>
+                    <label>Si deseas recibir mayor información respecto a nuestras novedades, por favor ingrese los siguientes datos</label><br><br><br>
+                    <div>
+                        <label>Nombre Completo:</label><input type="text" name="nombre" pattern="[A-Za-z].{1-20}"><br><br>
+                        <label>E_mail:</label> <input type="email" name="correo" placeholder="ejemplo@micorreo.com"><br><br>
+                        <label>Teléfono:</label> <input type="tel" name="tel"><br><br>
+                        <label>Codigo Postal:</label> <input type="text" name="postal"><br><br>
+                        <label>Fecha actual:</label> <input type="date" name="fecha"><br><br>
+                        <label>Tipo de usuario:</label> <input list="" name="TipoUsuario">
+                        <datalist id="usuario">
+                            <option value="Extranjero">Turista Extranjero</option>
+                            <option value="Nacional">Turista Nacional</option>
+                        </datalist><br><br>
+                        <label>Lugar de su preferencia:</label>
+                        <select name="lugar">
+                            <option value="ciudad1">Seleccione un lugar</option>
+                            <option value="ciudad2">Marrakech</option>
+                            <option value="ciudad3">Ouarzazate</option>
+                            <option value="ciudad4">Ait Ben Haddou</option>
+                            <option value="ciudad5">Fez</option>
+                            <option value="ciudad6">Valle del Dades</option>
+                        </select><br><br>
+                        <label>Comentarios:</label>
+                        <textarea name="comentario"></textarea><br><br><br>
+
+                        <input type="submit" name="aceptar" value="Aceptar"> <input type="button" name="cancelar" value="Cancelar">
+                    </div>
+                        </section>
+                        </form>
+                            
+        <aside class="lado">
+            <article class="tiempo">
+                <div id="hora"><script>mostrarHora();</script></div>
+                <div id="fecha"><script>mostrarHora();</script></div>
+            </article>
+            
+            <article id="carrusel1">
+            <div class="contenido">
+                <div class="carrusel">
+                    <figure><img src="imagenes/banner/1.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/2.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/3.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/4.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/5.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/6.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/7.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/8.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/9.jpg" alt="carrusel"></figure>
+                    <figure><img src="imagenes/banner/10.jpg" alt="carrusel"></figure>
+                </div>
+            </div>
+            </article> <br><br>
+            
+            <article id="imagen1"><img src="imagenes/publicidad/cocacola.jpg" alt="publicidad"></article>
+            <article id="imagen2"><img src="imagenes/publicidad/arreglosRopa.jpg" alt="publicidad"></article>
+            <article id="imagen3"><img src="imagenes/publicidad/disenografico.jpg" alt="publicidad"></article>
+            <article id="imagen4"><img src="imagenes/publicidad/paginasWeb.jpg" alt="publicidad"></article>
+            <article id="imagen5"><img src="imagenes/publicidad/publi.jpg" alt="publicidad"></article>
+            <article id="imagen6"><img src="imagenes/publicidad/kansas.jpg" alt="publicidad"></article>
+        
+        </aside>
+    </main>
+    <footer class="piePagina">
+        <article class="footerUno">
+                <span class="tag3"><a href="documentos/nosotros.txt" target="_blank">Sobre Nosotros</a></span>
+                <span class="tag3"><a href="documentos/privacidad.pdf" target="_blank">Politicas de privacidad</a></span>
+                <span class="tag3"><a href="documentos/terminos.pdf" target="_blank">Términos de uso</a></span>
+        </article>        
+        <article class="footerDos">
+            <span>Somos una página informativa que apoya el turismo en todos sus niveles, ya que conocer las maravillas del mundo en nuestro objetivo. Gracias por Tu Visita.</span><br />
+            <span>Copyright &copy; 2019  &bull; SaharaToursGo.com &#9834; © Cochabamba - 
+            Bolivia &#9834;: Derechos Reservados</span><br>
+        </article>
+    </footer>
+</body>
+</html>
