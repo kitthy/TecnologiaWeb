@@ -11,7 +11,7 @@ function mostrarHora() {
     var diasSemana = ["Domingo", "Lunes", "Martes", "Miercoles", "jueves", "viernes", "Sabado"];
     var diaHoy = diasSemana[dia];
 
-    fecha = diaHoy +" "+ dia +" "+ "de"+" " + esteMes+ " " + "del"+ " " + anio;
+    fecha = diaHoy +" "+ diaMes +" "+ "de"+" " + esteMes+ " " + "del"+ " " + anio;
     window.status = cad;
     /*window.status = fecha;*/
     document.getElementById('hora').innerHTML= cad;
