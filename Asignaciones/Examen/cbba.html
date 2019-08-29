@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Bolivia Turistica</title>
+	<meta name="description" content="Assignment for exam web thecnology">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet"  type="text/css" href="css/large.css">
+	<script src="js/currentday.js"></script>
+</head>
+<body>
+
+	<div>
+		<header>
+			<div id="titulo"> 
+				<img src="images/logo.png" alt="Logo">
+				<div>
+						<h2>Bolivia Tusritica</h2>
+						<p>Conoce el mejor lugar  del mundo</p>
+				</div>
+			</div>
+
+			<nav class="navigation">
+				<a href="#" onclick="toggleMenu()">&#9776; Menu</a>				
+                <a href="#">Inicio</a>
+                <a href="#">La Paz</a>	
+				<a class="active" href="cochabamba.html">Cochabamba</a>
+				<a href="#">Santa Cruz</a>
+				<a href="#">Contactos</a>
+				<a href="#">Galeria</a>
+			</nav>
+		</header>
+		
+		<main>
+			<h1>Cochabamba</h1>
+			<div>
+				<picture>
+					<img  src="images/cochabamba.jpg" alt="Cochabamba" width="600">
+			 	</picture>			
+					<div>
+							<h3>Informacion del clima</h3>
+							<table>
+								<tr>            
+								  <td>Tiempo Actual:</td>
+								  <td><span id="currently"></span></td>
+								</tr>
+								<tr>            
+								  <td>Temperatura Actual:</td>
+								  <td><span id="temperature"></span> &deg;F</td>
+								</tr>
+								<tr>            
+								  <td>Humedad:</td>
+								  <td><span id="humidity"></span>%</td>
+								</tr>
+								<tr>            
+									<td>Velocidad del viento:</td>
+									<td><span id="wind-speed"></span> mph</td>
+								</tr>
+											
+							 </table>
+						</div>		
+			</div>
+			<div >
+				<h3>5 Day Forecast</h3>
+				<table>
+					<tr>            
+					  <th><span id="day1"></span>Dia 1</th>
+					  <th><span id="day2"></span>Dia 2</th>
+					  <th><span id="day3"></span>Dia 3</th>
+					  <th><span id="day4"></span>Dia 4</th>
+					  <th><span id="day5"></span>Dia 5</th>
+					</tr>
+					<tr>            
+						<td><img id="icon1" src="" alt=""></td>
+						<td><img id="icon2" src="" alt=""></td>
+						<td><img id="icon3" src="" alt=""></td>
+						<td><img id="icon4" src="" alt=""></td>
+						<td><img id="icon5" src="" alt=""></td>		
+					</tr>
+					<tr >            
+						<td><span id="temp1"></span></td>
+						<td><span id="temp2"></span></td>
+						<td><span id="temp3"></span></td>
+						<td><span id="temp4"></span></td>
+						<td><span id="temp5"></span></td>
+					</tr>
+					  </table>
+					  <p>Informacion Metereologia:  <a href="https://openweathermap.org/" target=_blank> Open Weather Map </a></p>
+					</div>
+			
+			<div>
+			
+				<article class="conoce">					
+					<h2>Conoce Cochabamba</h2>
+					
+					<img src="images/cocha1.jpg" alt="Preston Town">
+
+                    <p>Cochabamba es una ciudad del centro de Bolivia. Un teleférico que parte desde una colina situada en el este lleva a la enorme estatua del Cristo de la Concordia, que ofrece vistas a la zona circundante. En el centro de la ciudad se encuentra la plaza 14 de Septiembre, una plaza colonial rodeada de pórticos, y la catedral de San Sebastián, de estilo barroco andino. En las proximidades hay varias iglesias coloniales, como la de Santo Domingo, que destaca por su llamativa fachada de piedra tallada.</p>
+                    <p>Se encuentra enclavada en un valle de tierras fértiles en la zona central del país, en la región sub-andina. Se asienta al pie de la Cordillera Tunari, donde está el cerro Tunari, que es el punto más alto del departamento de Cochabamba (5,035 msnm). Por en medio de la ciudad cruza el Río Rocha de noreste a suroeste. Con una altitud promedio de 2570, la ciudad se puede jactar de un excelente clima.</p>
+                </article>	
+			</div>
+			<div class="contact">
+				<a href="#" target=_blank><img src="images/cocha2.jpg" alt="Map Preston"></a>
+		
+				 <h6>Contactos</h6>
+				 <p>
+				  	Conoce cochabamba <br>
+					Cochbamba - Bolivia <br>
+					591-4453215 <br>
+					info@conocebolivia.com
+				</p>
+			</div> 
+			
+		</main>
+
+			<footer>
+				<br></br>
+				<article class="footerInicio">
+					&copy;2019 Conoce Bolivia | Atributions |Faviola Arellano <br>
+					<script src="js/currentdate.js"></script>
+					<script src="js/hamburger.js"></script>
+					<script src="js/cbbainfo.js"></script>
+				</article> 
+					<article class="tiempoHora">
+						<div id="hora"><script>mostrarHora();</script></div>
+						<div id="fecha"><script>mostrarHora();</script></div>
+					</article>
+					<br></br>
+			</footer>
+	</div>
+</body>
+</html>
