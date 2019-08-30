@@ -1,0 +1,54 @@
+{
+  "titulo" : "Lugares Turísticos de Marruecos",
+  "subtitulo" : "Principales Ciudades",
+  "secretBase" : "Super tower",
+  "active" : true,
+  "ciudades" : [
+    {
+      "Nombre" : "Marrakech",
+        "Extension" : "230 km2",
+      "Poblacion" : "1 545 541 habitantes",
+      "Clima" : "Semi arido",
+      "Lugares" : [
+        "Plazas y calles",
+        "Mezquitas, palacios",
+        "Museos"
+      ]
+    },
+
+    {
+        "Nombre" : "Uarzazate",
+          "Extension" : "305 km2",
+        "Poblacion" : "63420 habitantes",
+        "Clima" : "Dan Jukes",
+        "Lugares" : [
+          "Plazas y calles",
+          "Mezquitas, palacios",
+          "Museos"
+        ]
+      },
+      {
+        "Nombre" : "Marrakech",
+          "Extension" : "Molecule Man",
+        "Poblacion" : 29,
+        "Clima" : "Dan Jukes",
+        "Lugares" : [
+          "Plazas y calles",
+          "Mezquitas, palacios",
+          "Museos"
+        ]
+      },
+      {
+        "Nombre" : "Marrakech",
+          "Extension" : "Molecule Man",
+        "Poblacion" : 29,
+        "Clima" : "Dan Jukes",
+        "Lugares" : [
+          "Plazas y calles",
+          "Mezquitas, palacios",
+          "Museos"
+        ]
+      }
+      
+  ]
+}

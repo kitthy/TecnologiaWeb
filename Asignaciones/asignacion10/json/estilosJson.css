@@ -1,0 +1,139 @@
+/* || general styles */
+
+
+
+html {
+
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+
+}
+
+
+
+body {
+
+  width: 80%;
+
+  margin: 0 auto;
+
+}
+
+
+
+h1, h2 {
+
+  font-family: 'Faster One', cursive;
+
+}
+
+
+
+/* header styles */
+
+
+
+h1 {
+
+  font-size: 4rem;
+
+  text-align: center;
+
+}
+
+
+header{
+  background: #8A4B08;
+
+}
+header p {
+
+  font-size: 1.3rem;
+
+  font-weight: bold;
+
+  text-align: center;
+
+}
+
+
+
+/* section styles */
+
+
+section article {
+
+  width: 25%;
+
+  float: left;
+
+}
+
+
+
+section p {
+
+  margin: 5px 0;
+
+}
+
+
+
+section ul {
+
+  margin-top: 0;
+
+}
+
+
+
+h2 {
+
+  font-size: 2.5rem;
+
+  letter-spacing: -5px;
+
+  margin-bottom: 10px;
+
+}
+
+@media screen and (max-width:1000px) and (min-width:680px){
+  h1 {
+
+    font-size: 2rem;
+  
+    text-align: center;
+  
+  }  
+
+  h2 {
+
+    font-size: 1.5rem;
+  
+    letter-spacing: -5px;
+  
+    margin-bottom: 8px;
+  
+  }
+
+}
+
+@media screen and (max-width:680px){    /* PANTALLA PEQUEÑA*/
+  h1 {
+
+    font-size: 1.5rem;
+  
+    text-align: center;
+  
+  }  
+
+  h2 {
+
+    font-size: 1rem;
+  
+    letter-spacing: -5px;
+  
+    margin-bottom: 5px;
+  
+  }
+
+}  

@@ -1,0 +1,36 @@
+#btnMenu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #ffffff;
+    float: left;
+}
+header label:hover{    /* cuando pasamos el cursor por encima dellabel*/
+    cursor: pointer;        /* cambiara el puntero del raton a una mano */
+    background: rgba(0,0,0,0,3);
+}
+@media (max-width:700px){       /* cuando achicamos la pantalla hasta un minimo de 700 px se realizara todos esos eventos */
+    header label{
+        display: block;     /* desplegara el menu */
+    }
+    .menu{
+        position: absolute;
+        background: #8A4B08;
+        width: 50%;
+        margin-left: -50%;      /* ocultara el menu colocando el margen de muestra en valor negativo */
+        transition: all 0.5s;   /* el tiempo de aparicion del menu tendra un retardo de medio segundo */
+    }
+    .menu ul{
+        flex-direction: column;     /* mostrara el menu en forma de columna */
+    }
+    .menu li{
+        border-top: 1px solid #fff;     /* colocamos un borde de 1px separando cada lista del menu */
+    }
+    #btnMenu:checked ~.menu{    /* cuando presionemos en el check boxs que esta oculto */
+        margin-left: 0;     /* permitira mostrar el menu a partir del margen cero */
+    }
+}

@@ -1,0 +1,9 @@
+   TODO SOBRE NOSOTROS
+SaharaToursGo.com, es un proyecto que nació hace dos años por inquietud de varios compañeros de la carrera de Sistemas
+de la Universidad Privada "Domingo Savio".
+Nuestro objetivo es brindar de información turística de determinados paises a todas las personas que visitan nuestra página,
+mostrar la belleza de nuestro planeta para que todos se eneamoren del mismo y así cultivar una cultura de cuidado
+solo si conocemos las bellezas que nos ofrece podemos saber lo delicado de nuestro ecosistema.
+
+Se pretende además contribuir con el cuidad del planeta, además de fomentar el turismo mediante la exibición de fotograficas 
+de lugares turísticos de todo el mundo.

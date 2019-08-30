@@ -1,0 +1,24 @@
+@media screen and (min-width:1000px){       /* cuando achicamos la pantalla hasta un minimo de 700 px se realizara todos esos eventos */
+    header{
+        width: 100%;
+        height: 165px;
+    }
+    .menu li a{
+        padding: 15px 20px;
+    }
+/*    .logo{
+        height: 70px
+    }*/
+
+    header h1{
+        align-content: flex-start;
+    }
+    .main{
+        padding-top: 155px;
+
+    }
+    .main #ciudad1, #ciudad2, #ciudad3, #ciudad4, #ciudad5, #ciudad6, #ciudad7{
+        width: 70%;
+        float: left;
+    }
+}

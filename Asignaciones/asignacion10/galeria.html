@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css"/>
+    
+    <link rel="stylesheet" type="text/css" href="CSS/estilosGaleria.css"/>
+
+</head>
+<body>
+    <header class="encabezado">
+        <div id="logo"><a href="principal.html"><img src="Imagenes/logo2.png" alt="Logo"/></a></div>
+        <input type="checkbox" id="btnMenu">
+        <label for="btnMenu"><img src="imagenes/icono1.PNG" alt=""></label>
+        <nav class="menu">
+            <!-- Crear un menu con la lista de lugares turisticos de Marruecos, aparece un scroll cuando la pantalla se achique-->
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="principal.html" onclick="ciudad1()">Marrakech</a></li>
+                <li><a href="principal.html" onclick="ciudad2()">Ouarzazate</a></li>
+                <li><a href="principal.html" onclick="ciudad3()">Ait Ben Haddou</a></li>
+                <li><a href="principal.html">Fez</a></li>
+                <li><a href="principal.html">Valle del Dades</a></li>
+                <li><a href="principal.html">Essaouira</a></li>
+                <li><a href="principal.html">Rabat</a></li>
+                <li><a href="principal.html">Galeria</a></li>
+                <li><a href="turismo.html">Información General</a></li>
+
+            </ul>  
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h2>Galeria</h2>
+            <div class="container">
+                <figure><img src="imagenes/galeria/DarCherifa.jpg" alt="carrusel">
+                    <figcaption>DarCherifa</figcaption>
+                </figure>
+                <figure><img src="imagenes/galeria/Ouarzazate_Medina.jpg" alt="carrusel">
+                    <figcaption>Ouarzazate Medina</figcaption>
+                </figure>
+                <figure><img src="imagenes/galeria/fondo.jpg" alt="carrusel">
+                    <figcaption>Desierto del Sahara</figcaption>
+                </figure>
+                <figure><img src="imagenes/galeria/hivernage.jpg" alt="carrusel">
+                    <figcaption>Hivernage</figcaption>
+                </figure>
+                <figure><img src="imagenes/galeria/misterioDelGosto.jpg" alt="carrusel">
+                    <figcaption>Misterios</figcaption>
+                </figure>
+                <figure><img src="imagenes/galeria/montarCamello.jpg" alt="carrusel">
+                    <figcaption>Turismo en camello</figcaption>
+                </figure>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

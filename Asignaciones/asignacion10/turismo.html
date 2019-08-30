@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+
+
+    <title>Informacion General</title>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+
+    <link rel="stylesheet" href="json/estilosJson.css">
+
+
+  </head>
+
+
+
+  <body>
+
+
+
+      <header>
+
+
+
+      </header>
+
+
+
+      <section>
+
+
+      </section>
+
+
+
+    <script>
+
+    var header = document.querySelector('header');
+
+    var section = document.querySelector('section');
+
+
+
+//    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    var requestURL = 'https://lopitos.github.io/practicasWeb/asignaciones/asignacion9/marruecos.json';
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET', requestURL);
+
+    request.responseType = 'text';
+
+    request.send();
+
+
+
+    request.onload = function() {
+
+      var superHeroesText = request.response;
+
+      var superHeroes = JSON.parse(superHeroesText);
+
+      populateHeader(superHeroes);
+
+      mostrarCiudad(superHeroes);
+
+    }
+
+
+
+    function populateHeader(jsonObj) {
+
+      var myH1 = document.createElement('h1');
+
+      myH1.textContent = jsonObj['titulo'];
+
+      var miTitulo = document.createElement('article');
+
+      header.appendChild(myH1);
+
+
+    }
+
+
+    function mostrarCiudad(jsonObj) {
+
+      var ciudad = jsonObj['ciudades'];
+
+
+
+      for(var i = 0; i < ciudad.length; i++) {
+
+        var myArticle = document.createElement('article');
+
+        var myH2 = document.createElement('h2');
+
+        var myPara1 = document.createElement('p');
+
+        var myPara2 = document.createElement('p');
+
+        var myPara3 = document.createElement('p');
+        var myPara4 = document.createElement('p');
+
+        var myList = document.createElement('ul');
+
+
+
+        myH2.textContent = ciudad[i].nombre;
+
+        myPara1.textContent = 'Extension: ' + ciudad[i].extension;
+
+        myPara2.textContent = 'Poblacion: ' + ciudad[i].poblacion;
+
+        myPara3.textContent = 'Idioma: ' + ciudad[i].idioma;
+
+        myPara4.textContent = 'Lugares de Interés: ';
+
+
+        var superPowers = ciudad[i].lugares;
+
+        for(var j = 0; j < superPowers.length; j++) {
+
+          var listItem = document.createElement('li');
+
+          listItem.textContent = superPowers[j];
+
+          myList.appendChild(listItem);
+
+        }
+
+
+
+        myArticle.appendChild(myH2);
+
+        myArticle.appendChild(myPara1);
+
+        myArticle.appendChild(myPara2);
+
+        myArticle.appendChild(myPara3);
+
+        myArticle.appendChild(myPara4);
+
+        myArticle.appendChild(myList);
+
+
+
+        section.appendChild(myArticle);
+
+      }
+
+    }
+
+
+
+    </script>
+    <br><br>
+      <a href="principal.html">Menu Principal</a>
+
+  </body>
+
+</html>
